@@ -1,7 +1,7 @@
 module Esolang
   module Interpreters
     class Boolfuck
-      def initialize(code, input)
+      def initialize(code, input = '')
         @code = code.gsub(/[^,\.;<>\+\[\]]/, '').chars
         @input = chars_to_bits(input)
         @output = []

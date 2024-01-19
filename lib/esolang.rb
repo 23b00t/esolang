@@ -4,7 +4,7 @@ require 'esolang/interpreters/smallfuck_interpreter'
 
 module Esolang
   def self.boolfuck(code, input = '')
-    Esolang::Interpreters::Boolfuck.new.run(code, input)
+    Esolang::Interpreters::Boolfuck.new(code, input).run
   end
 
   def self.smallfuck(code, input = '')
