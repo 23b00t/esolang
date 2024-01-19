@@ -91,6 +91,7 @@ module Esolang
         chars.chars.map { |char| [char.ord].pack("C*").unpack("b*")[0] }.join.chars.map(&:to_i)
       end
 
+      # Should be a String refinement, specs of boolfuck say that it puts out bits
       def translate_output_bits_to_chars
         # Translate back to ASCII char: e.g. "00010010".reverse.to_i(2).chr
         # fill up @output with 0's that % 8 == 0, split in groups of 8 and do with each block .reverse.to_i(2).chr
