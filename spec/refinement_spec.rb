@@ -21,4 +21,11 @@ describe String do
     ;+;+;+;"
     expect(code.boolfuck.leo_bytes_to_s).to eq("Hello, world!\n")
   end
+
+  it "should add smallfuck method" do
+    code = "[*>[>*>]>]"
+    tape = "11001"
+    result = code.smallfuck(tape)
+    expect(result).to eq("01100")
+  end
 end
