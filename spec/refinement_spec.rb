@@ -1,5 +1,5 @@
 require 'spec_helper'
-require_relative '../lib/refinements/refinements.rb'
+require_relative '../lib/esolang.rb'
 
 using Esolang::Refinements
 
