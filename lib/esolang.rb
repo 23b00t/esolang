@@ -1,7 +1,7 @@
 # lib/esolang.rb
-require_relative 'esolang/interpreters/boolfuck_interpreter'
-require_relative 'esolang/interpreters/smallfuck_interpreter'
-require_relative 'esolang/refinements/refinements'
+require_relative '../lib/interpreters/boolfuck_interpreter.rb'
+# require_relative '../lib/interpreters/smallfuck_interpreter.rb'
+require_relative '../lib/refinements/refinements.rb'
 
 module Esolang
   def self.boolfuck(code, input = '')
