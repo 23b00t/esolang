@@ -5,6 +5,10 @@ module Esolang
         Esolang::Interpreters::Boolfuck.new(self, input).run
       end
 
+      def smallfuck(tape)
+        Esolang::Interpreters::Smallfuck.new(self, tape).run
+      end
+
       def leo_bytes_to_s
         # Translate back to ASCII char: e.g. "00010010".reverse.to_i(2).chr
         # fill up @output with 0's that % 8 == 0, split in groups of 8 and do with each block .reverse.to_i(2).chr
