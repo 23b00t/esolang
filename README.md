@@ -56,6 +56,6 @@ This gem also provides a method `leo_bytes_to_s` (as part of the Refinements) fo
   - Enhance time complexity?
   - Share common methods e.g. create_loop_map
 
-- Add `paintfuck_interpreter` (and more esoteric languages)
+- Add `brainfuck_interpreter` (and more esoteric languages)
 
 - Add more tests
