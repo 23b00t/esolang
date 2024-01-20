@@ -1,7 +1,8 @@
 # esolang
 
 A gem for interpreting esoteric programming languages.
-Supported at the moment: Smallfuck, Boolfuck
+
+Supported at the moment: Smallfuck, Boolfuck, Paintfuck
 
 ## Installation
 
@@ -15,6 +16,7 @@ gem install esolang-0.1.0.pre.gem
 ```ruby
 require 'esolang'
 using Esolang::Refinements
+
 code = ";;;+;+;;+;+;
     +;+;+;+;;+;;+;
     ;;+;;+;+;;+;
@@ -29,6 +31,7 @@ code = ";;;+;+;;+;+;
     ;;+;+;;+;;+;
     +;+;;;;+;+;;
     ;+;+;+;
+
 puts code.boolfuck
 puts code.boolfuck.leo_bytes_to_s
 ```
@@ -45,8 +48,7 @@ require 'esolang'
 
 Esolang.boolfuck(code, input)
 ```
-This gem also provides a method `leo_bytes_to_s` (as part of the Refinements) for translating binary strings back to ASCII characters.
-For more details on usage and supported esoteric languages, refer to the gem's documentation.
+This gem also provides a method `leo_bytes_to_s` (as part of the Refinements) for translating little-endian ordered (leo) binary strings back to ASCII characters.
 
 ## TODOs:
 
