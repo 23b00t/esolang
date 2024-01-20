@@ -1,6 +1,7 @@
 # esolang
 
-A gem for working with esoteric programming languages.
+A gem for interpreting esoteric programming languages.
+Supported at the moment: Smallfuck, Boolfuck
 
 ## Installation
 
@@ -49,9 +50,10 @@ For more details on usage and supported esoteric languages, refer to the gem's d
 
 ## TODOs:
 
-- Refactor `boolfuck_interpreter`:
-  - Enhance time complexity
+- Refactor Interpreters:
+  - Enhance time complexity?
+  - Share common methods e.g. create_loop_map
 
-- Add `smallfuck_interpreter` (and more esoteric languages)
+- Add `paintfuck_interpreter` (and more esoteric languages)
 
 - Add more tests
