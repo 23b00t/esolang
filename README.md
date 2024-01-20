@@ -54,7 +54,7 @@ This gem also provides a method `leo_bytes_to_s` (as part of the Refinements) fo
 
 - Refactor Interpreters:
   - Enhance time complexity?
-  - Share common methods e.g. create_loop_map
+  - Include more logic in BaseInterpreter (current_bit ?)
 
 - Add `brainfuck_interpreter` (and more esoteric languages)
 
