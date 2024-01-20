@@ -2,7 +2,7 @@
 
 A gem for interpreting esoteric programming languages.
 
-Supported at the moment: Smallfuck, Boolfuck
+Supported at the moment: Smallfuck, Boolfuck, Paintfuck
 
 ## Installation
 

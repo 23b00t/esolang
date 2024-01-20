@@ -1,6 +1,7 @@
 # lib/esolang.rb
 require_relative '../lib/interpreters/boolfuck_interpreter.rb'
 require_relative '../lib/interpreters/smallfuck_interpreter.rb'
+require_relative '../lib/interpreters/paintfuck_interpreter.rb'
 require_relative '../lib/refinements/refinements.rb'
 
 module Esolang
@@ -10,5 +11,9 @@ module Esolang
 
   def self.smallfuck(code, tape)
     Interpreters::Smallfuck.new(code, tape).run
+  end
+
+  def self.paintfuck(code, iterations, width, height)
+    Interpreters::Paintfuck.new(code, iterations, width, height).run
   end
 end
