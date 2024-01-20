@@ -9,7 +9,7 @@ Supported at the moment: Smallfuck, Boolfuck, Paintfuck
 To use the `esolang` gem, you can install it via:
 
 ```bash
-gem install esolang-0.1.0.pre.gem
+gem install esolang-0.1.1.pre.gem
 ```
 
 ## Example Usage
