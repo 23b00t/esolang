@@ -20,6 +20,6 @@ describe Esolang::Interpreters::Boolfuck do
     ;+;+;+;"
     interpreter = described_class.new(code)
     result = interpreter.run
-    expect(result).to eq("Hello, world!\n")
+    expect(result).to eq("000100101010011000110110001101101111011000110100000001001110111011110110010011100011011000100110100001000101")
   end
 end

@@ -26,7 +26,7 @@ module Esolang
           @code_pointer += 1
         end
 
-        translate_output_bits_to_chars
+        @output.join
       end
 
       private
@@ -48,7 +48,7 @@ module Esolang
       end
 
       def create_loop_map
-        # Further enhancement of time complexity for big code input by creating the map on the fly (one iteration less and directly jumping over unmet loops)?
+        # Further enhancement of time complexity for big code input by creating the map on the fly?
         map = {}
         stack = []
 
@@ -89,17 +89,6 @@ module Esolang
         # More efficent and better readable method?
         # Translate input to little-endian order bytes: e.g. ["H".ord].pack("C*").unpack("b*")[0]
         chars.chars.map { |char| [char.ord].pack("C*").unpack("b*")[0] }.join.chars.map(&:to_i)
-      end
-
-      # Should be a String refinement, specs of boolfuck say that it puts out bits
-      def translate_output_bits_to_chars
-        # Translate back to ASCII char: e.g. "00010010".reverse.to_i(2).chr
-        # fill up @output with 0's that % 8 == 0, split in groups of 8 and do with each block .reverse.to_i(2).chr
-        zeros_count_to_fill = (@output.length % 8).zero? ? 0 : 8 - (@output.length % 8)
-
-        @output.fill(0, @output.length, zeros_count_to_fill).each_slice(8).map do |byte|
-          byte.join.reverse.to_i(2).chr
-        end.join
       end
 
       def running?
