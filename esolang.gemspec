@@ -7,6 +7,7 @@ Gem::Specification.new do |spec|
                         Adds string refinements, usage: e.g. 'code_string'.boolfuck('user_input'). Alternative usage: e.g. Esolang.boolfuck(code, input)"
   spec.authors       = ["Daniel Kipp"]
   spec.email         = ["daniel.kipp@gmail.com"]
+  spec.license       = "MIT"
   spec.files         = Dir["lib/**/*", "lib/esolang.rb"]
   spec.require_paths = ["lib"]
 end
