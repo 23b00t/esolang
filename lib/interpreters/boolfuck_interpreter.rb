@@ -30,14 +30,6 @@ module Esolang
 
       private
 
-      def input_to_tape
-        @input.empty? ? current_bit(0) : current_bit(@input.shift)
-      end
-
-      def tape_to_output_array
-        @output << current_bit
-      end
-
       def chars_to_bits(chars)
         # More efficent and better readable method?
         # Translate input to little-endian order bytes: e.g. ["H".ord].pack("C*").unpack("b*")[0]

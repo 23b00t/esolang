@@ -12,6 +12,10 @@ module Esolang
       def paintfuck(iterations, width, height)
         Esolang::Interpreters::Paintfuck.new(self, iterations, width, height).run
       end
+
+      def brainfuck(input = '')
+        Esolang::Interpreters::Brainfuck.new(self, input).run
+      end
     end
   end
 end

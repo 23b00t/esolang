@@ -23,6 +23,14 @@ module Esolang
         @tape_pointer -= 1
       end
 
+      def input_to_tape
+        @input.empty? ? current_bit(0) : current_bit(@input.shift)
+      end
+
+      def tape_to_output_array
+        @output << current_bit
+      end
+
       def create_loop_map
         map = {}
         stack = []
