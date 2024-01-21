@@ -2,12 +2,6 @@
 module Esolang
   module Interpreters
     class BaseInterpreter
-      class EndlessArray < Array
-        def [](index)
-          super(index) || 0
-        end
-      end
-
       def initialize(code)
         @code = code.chars
         @code_pointer = 0

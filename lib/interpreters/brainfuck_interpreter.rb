@@ -7,7 +7,7 @@ module Esolang
         super(code.gsub(/[^,\.<>\+\-\[\]]/, ''))
         @input = chars_to_bytes(input)
         @output = []
-        @tape = EndlessArray.new
+        @tape = Hash.new(0)
       end
 
       def run
