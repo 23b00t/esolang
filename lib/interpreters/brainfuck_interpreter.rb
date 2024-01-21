@@ -32,11 +32,11 @@ module Esolang
       private
 
       def increment
-        current_bit(current_bit + 1)
+        current_bit((current_bit + 1) % 256)
       end
 
       def decrement
-        current_bit(current_bit - 1)
+        current_bit((current_bit - 1) % 256)
       end
 
       def chars_to_bytes(chars)
