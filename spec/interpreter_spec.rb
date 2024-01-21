@@ -19,7 +19,7 @@ describe Esolang do
     +;+;;;;+;+;;
     ;+;+;+;"
     result = described_class.boolfuck(code)
-    expect(result).to eq("000100101010011000110110001101101111011000110100000001001110111011110110010011100011011000100110100001000101")
+    expect(result).to eq("Hello, world!\n")
   end
 
   it "should interpret smallfuck code correctly" do

@@ -33,7 +33,6 @@ code = ";;;+;+;;+;+;
     ;+;+;+;
 
 puts code.boolfuck
-puts code.boolfuck.leo_bytes_to_s
 ```
 This gem adds string refinements. You can use the `boolfuck` method directly on a string:
 ```ruby
@@ -48,14 +47,3 @@ require 'esolang'
 
 Esolang.boolfuck(code, input)
 ```
-This gem also provides a method `leo_bytes_to_s` (as part of the Refinements) for translating little-endian ordered (leo) binary strings back to ASCII characters.
-
-## TODOs:
-
-- Refactor Interpreters:
-  - Enhance time complexity?
-  - Include more logic in BaseInterpreter (current_bit ?)
-
-- Add `brainfuck_interpreter` (and more esoteric languages)
-
-- Add more tests

@@ -25,7 +25,7 @@ module Esolang
           @code_pointer += 1
         end
 
-        @output.join
+        translate_output_bits_to_chars
       end
 
       private
@@ -48,6 +48,16 @@ module Esolang
         @tape[@tape_pointer] = new_value unless new_value.nil?
 
         @tape[@tape_pointer]
+      end
+
+      def translate_output_bits_to_chars
+        # Translate back to ASCII char: e.g. "00010010".reverse.to_i(2).chr
+        # fill up @output with 0's that % 8 == 0, split in groups of 8 and do with each block .reverse.to_i(2).chr
+        zeros_count_to_fill = (@output.length % 8).zero? ? 0 : 8 - (@output.length % 8)
+
+        @output.fill(0, @output.length, zeros_count_to_fill).each_slice(8).map do |byte|
+          byte.join.reverse.to_i(2).chr
+        end.join
       end
     end
   end
