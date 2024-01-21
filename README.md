@@ -2,7 +2,7 @@
 
 A gem for interpreting esoteric programming languages.
 
-Supported at the moment: Smallfuck, Boolfuck, Paintfuck, Brainfuck
+Supported at the moment: Smallfuck, Boolfuck, Paintfuck, Brainfuck, Ook! (with method to feet the memory pointer with bananas)
 
 This gem is inspired by [this](https://www.codewars.com/kata/esolang-interpreters-number-1-introduction-to-esolangs-and-my-first-interpreter-ministringfuck) Kata Series on Codewars that ignited my passion for esolangs. Special thanks to the author [donaldsebleung](https://www.codewars.com/users/donaldsebleung).
 
