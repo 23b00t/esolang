@@ -39,14 +39,6 @@ module Esolang
         current_bit(current_bit - 1)
       end
 
-      def input_to_tape
-        current_bit(@input.shift)
-      end
-
-      def tape_to_output_array
-        @output << current_bit
-      end
-
       def chars_to_bytes(chars)
         chars.chars.map { |char| char.ord }
       end
