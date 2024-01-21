@@ -16,6 +16,10 @@ module Esolang
       def brainfuck(input = '')
         Esolang::Interpreters::Brainfuck.new(self, input).run
       end
+
+      def ook(input = '')
+        Esolang::Interpreters::Ook.new(self, input).run
+      end
     end
   end
 end

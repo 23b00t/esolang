@@ -4,7 +4,8 @@ module Esolang
   module Interpreters
     class Brainfuck < BaseInterpreter
       def initialize(code, input = '')
-        super(code.gsub(/[^,\.<>\+-\[\]]/, ''))
+        # Added ? to valid chars for compatibility with Ook! But don't parse ? in Brainfuck
+        super(code.gsub(/[^\?,\.<>\+-\[\]]/, ''))
         @input = chars_to_bytes(input)
         @output = []
         @tape = Hash.new(0)
