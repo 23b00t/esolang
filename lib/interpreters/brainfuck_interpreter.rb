@@ -4,7 +4,7 @@ module Esolang
   module Interpreters
     class Brainfuck < BaseInterpreter
       def initialize(code, input = '')
-        super(code.gsub(/[^,\.<>\+\-\[\]]/, ''))
+        super(code.gsub(/[^,\.<>\+-\[\]]/, ''))
         @input = chars_to_bytes(input)
         @output = []
         @tape = Hash.new(0)
