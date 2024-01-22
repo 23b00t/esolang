@@ -15,7 +15,7 @@ This is an ongoing fun and educational project, and the author assumes no liabil
 To use the `esolang` gem, you can install it via:
 
 ```bash
-gem install esolang-0.1.2.pre.gem
+gem install esolang-0.1.2.gem
 ```
 
 ## Example Usage
