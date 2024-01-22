@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = "esolang"
-  spec.version       = "0.1.2.pre"
+  spec.version       = "0.1.2"
   spec.summary       = "Interpreter gem for different Esolangs"
   spec.description   = "A gem for working with esoteric programming languages.
                         Usage: require 'esolang'; using Esolang::Refinements
