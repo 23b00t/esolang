@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = "esolang"
-  spec.version       = "0.1.2"
+  spec.version       = "0.1.3"
   spec.summary       = %q{A Ruby gem for interpreting esoteric programming languages.}
   spec.description   = <<-DESC
     A gem for working with esoteric programming languages.
@@ -17,7 +17,7 @@ Gem::Specification.new do |spec|
       # Alternative usage
       result = Esolang.boolfuck(code, input)
       ```
-    See documentation: [RubyDoc.info](https://www.rubydoc.info/gems/esolang/0.1.2)
+    See documentation: [RubyDoc.info](https://www.rubydoc.info/gems/esolang/0.1.3)
   DESC
   spec.homepage      = "https://github.com/23b00t/esolang"
   spec.authors       = ["Daniel Kipp"]
