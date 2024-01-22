@@ -1,6 +1,6 @@
 # esolang
 
-A gem for interpreting esoteric programming languages.
+A Ruby gem for interpreting esoteric programming languages.
 
 Supported at the moment: Smallfuck, Boolfuck, Paintfuck, Brainfuck, Ook! (with method to feet the memory pointer with bananas)
 
