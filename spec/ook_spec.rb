@@ -28,6 +28,6 @@ describe "Ook!" do
   end
 
   it "should print hello world" do
-    expect(code.ook).to eq("Hello World")
+    expect(code.ook).to eq("Hello World!")
   end
 end
